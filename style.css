@@ -1,0 +1,84 @@
+/**reset*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+/** Import fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap');
+
+body{
+  background-color:hsl(218, 28%, 13%);
+  color: hsl(0, 0%, 100%);
+  font-family: 'Raleway', sans-serif;
+}
+
+main{
+  padding: 50px;
+}
+
+header{
+  display: flex;
+  text-align: center;
+  justify-content: space-between; 
+}
+
+header a{
+  color:  hsl(0, 0%, 100%);
+  padding-left: 50px;
+}
+
+/** main banner style*/
+
+.section--banner{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.section--banner img{
+  width: 600px;
+  padding-bottom: 50px;
+}
+
+h1{
+  font-weight: bold;
+  font-size: 35px;
+}
+
+.section--banner span{
+  font-size: 17px;
+  line-height: 25px;
+  padding-top: 25px;
+  padding-bottom: 30px;
+}
+
+
+.section--banner a{
+  background-color: hsl(176, 68%, 64%);
+  padding: 20px 80px;
+  border-radius: 32px;
+  color: hsl(0, 0%, 100%);
+}
+
+.section--banner a:hover{
+  background-color: hsl(176, 99%, 49%);
+}
+
+.section--services{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 80px;
+}
+
+.section--services .service{
+  width: 500px;
+  padding: 50px;
+  
+  
+  
+}
