@@ -13,6 +13,12 @@ body{
   background-color:hsl(218, 28%, 13%);
   color: hsl(0, 0%, 100%);
   font-family: 'Raleway', sans-serif;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+
 }
 
 main{
@@ -23,6 +29,10 @@ header{
   display: flex;
   text-align: center;
   justify-content: space-between; 
+}
+
+header .logo{
+  width: 50%;
 }
 
 header a{
@@ -40,7 +50,7 @@ header a{
 }
 
 .section--banner img{
-  width: 600px;
+  width: 50%;
   padding-bottom: 50px;
 }
 
@@ -133,11 +143,8 @@ h1{
 
 .section--testimonials{
   display: flex;
- 
   margin-top: 150px;
   margin-bottom: 200px;
-  
-  
 }
 
 .card{
@@ -227,12 +234,12 @@ footer a{
 }
 
 .contact p{
-  margin-bottom: 30px ;
+  padding: 20px 0;
   
 }
 
 .contact span{
-  padding-left: 20px;
+  padding-left: 10px;
 }
 
 .links{
@@ -257,3 +264,122 @@ footer a{
   font-size:  30px;
 }
 
+
+@media screen and (max-width: 1024px){
+  
+  footer{
+    grid-template-columns: 2fr 2fr;
+    grid-template-areas:
+    "logo . "
+    "location  contact"
+    "links more-links"
+    "social-icons social-icons"
+    ;
+  }
+  
+  
+  .location{
+    grid-template-columns: 10% 80%;
+  }
+
+  .social-icons{
+    
+    display: flex;
+    justify-content:center;
+    
+  }
+
+  .social-icons i{
+    margin-left: 30px;
+  }
+}
+
+@media (max-width: 768px){
+  
+  .section--testimonials{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .card{
+    margin: 20px 0;
+    width: 80%;
+  }
+  
+
+  
+  footer{
+    grid-template-columns: 2fr;
+    grid-template-areas:
+    "logo"
+    "location"
+    "contact"
+    "links" 
+    "more-links"
+    "social-icons" 
+    ;
+  }
+
+  .logo,
+  .location,
+  .contact,
+  .links,
+  .more-links{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  }
+  
+  .location img{
+    margin-bottom: 20px;
+  }
+
+  .contact p{
+    padding: 20px 0;
+  }
+  
+
+  
+}
+
+@media (max-width: 425px){
+  
+  body{
+    overflow-x: hidden;
+  }
+
+  main{
+    padding: 80px;
+   
+  }
+
+  h1{
+    font-size: 22px;
+  }
+  
+  .section--banner span{
+    font-size: 13px;
+  }
+
+  
+  .section--banner--secondary {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    
+}
+
+.section--testimonials{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card{
+  margin: 20px 0;
+  width: 50%;
+}
+
+}
